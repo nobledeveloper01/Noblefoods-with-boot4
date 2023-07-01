@@ -115,5 +115,25 @@
         }
     });
     
+    
 })(jQuery);
 
+function search() {
+    // Get the value from the search input field
+    var searchQuery = document.getElementById("search-input").value;
+
+    // Perform a search operation using the searchQuery
+    // You can use AJAX to send the search query to your server and retrieve the results
+
+    // Example:
+    // You can use the searchQuery to make an AJAX request to your server
+    // and handle the response to display the search results on your website.
+    // You can update this example code based on your server-side implementation.
+    console.log(searchQuery); // Print the search query in the browser console
+    // Assuming you have a server-side script to handle the search request
+    var url = "/search?query=" + encodeURIComponent(searchQuery);
+    // Perform an AJAX request to the server
+    // ...
+    // Handle the response and display the search results
+    // ...
+  }

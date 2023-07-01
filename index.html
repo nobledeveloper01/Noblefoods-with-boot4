@@ -44,15 +44,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <div class="container-xxl bg-white p-0"> -->
+    <div class="container-xxl bg-white p-0">
     <!-- Spinner Start -->
-    <!-- <div id="spinner" class="show bg-white position-fixed translate-middSle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middSle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div> -->
+        </div>
     <!-- Spinner End -->
-    <!-- </div>   -->
+    </div>  
     <!-- Navbar & Hero Start -->
     <header class="container-xxl position-relative p-0">
       <nav
@@ -93,7 +93,7 @@
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
-          <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+          <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
         </div>
       </nav>
       <section class="container-xxl py-5 bg-dark hero-header mb-5">
@@ -112,23 +112,17 @@
                 gold, it would be a merrier world.” - J.R.R. Tolkien
               </p>
               <a
-                href=""
+                href="booking.html"
                 class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
                 >Book A Table</a
               ><br />
               <form class="form-search animated slideInLeft">
-                <label
-                  for="search"
-                  class="search-p text-white animated slideInLeft"
-                  >Search for you favourite food here
+                <label for="search" class="search-p text-white animated slideInLeft">
+                  Search for your favorite food here
                 </label>
                 <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control search-input"
-                    placeholder="Search"
-                  />
-                  <button class="btn btn-primary" type="submit">Search</button>
+                  <input type="text" class="form-control search-input" placeholder="Search" id="search-input" />
+                  <button class="btn btn-primary" type="submit" onclick="search()">Search</button>
                 </div>
               </form>
             </div>
@@ -154,7 +148,7 @@
           </h5>
           <h1 class="mb-5">What we offer</h1>
         </div>
-        <div class="row g-4">
+        <section class="row g-4">
           <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item rounded pt-3">
               <div class="p-4">
@@ -203,7 +197,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
     <!-- Service End -->
@@ -309,7 +303,7 @@
                 </div>
               </div>
             </div>
-            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
           </article>
         </div>
       </div>
@@ -950,7 +944,7 @@
                     data-target-input="nearest"
                   >
                     <input
-                      type="text"
+                      type="datetime"
                       class="form-control datetimepicker-input"
                       id="datetime"
                       placeholder="Date & Time"
@@ -966,6 +960,13 @@
                       <option value="1">People 1</option>
                       <option value="2">People 2</option>
                       <option value="3">People 3</option>
+                      <option value="4">People 4</option>
+                      <option value="5">People 5</option>
+                      <option value="6">People 6</option>
+                      <option value="7">People 7</option>
+                      <option value="8">People 8</option>
+                      <option value="9">People 9</option>
+                      <option value="10">People 10</option>
                     </select>
                     <label for="select1">No Of People</label>
                   </div>
@@ -1038,7 +1039,7 @@
           >
             Team Members
           </h5>
-          <h1 class="mb-5">Our Master Chefs</h1>
+          <h1 class="mb-5">Our Executives</h1>
         </div>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -1046,8 +1047,8 @@
               <div class="rounded-circle overflow-hidden m-4">
                 <img class="img-fluid" src="img/team-1.jpg" alt="" />
               </div>
-              <h5 class="mb-0">Full Name</h5>
-              <small>Designation</small>
+              <h5 class="mb-0">Marvellous Bamisaye</h5>
+              <small>CEO, NobleFoods</small>
               <div class="d-flex justify-content-center mt-3">
                 <a class="btn btn-square btn-primary mx-1" href=""
                   ><i class="fab fa-facebook-f"></i
@@ -1066,8 +1067,8 @@
               <div class="rounded-circle overflow-hidden m-4">
                 <img class="img-fluid" src="img/team-2.jpg" alt="" />
               </div>
-              <h5 class="mb-0">Full Name</h5>
-              <small>Designation</small>
+              <h5 class="mb-0">Oluwaferanmi Akinola</h5>
+              <small>Strategic and Content Manager, CEO Salesnoisemaker</small>
               <div class="d-flex justify-content-center mt-3">
                 <a class="btn btn-square btn-primary mx-1" href=""
                   ><i class="fab fa-facebook-f"></i
@@ -1086,8 +1087,8 @@
               <div class="rounded-circle overflow-hidden m-4">
                 <img class="img-fluid" src="img/team-3.jpg" alt="" />
               </div>
-              <h5 class="mb-0">Full Name</h5>
-              <small>Designation</small>
+              <h5 class="mb-0">Olurunfemi Adedoyin</h5>
+              <small> CEO Flashkid Softwares LTD</small>
               <div class="d-flex justify-content-center mt-3">
                 <a class="btn btn-square btn-primary mx-1" href=""
                   ><i class="fab fa-facebook-f"></i
@@ -1106,8 +1107,8 @@
               <div class="rounded-circle overflow-hidden m-4">
                 <img class="img-fluid" src="img/team-4.jpg" alt="" />
               </div>
-              <h5 class="mb-0">Full Name</h5>
-              <small>Designation</small>
+              <h5 class="mb-0">Mercy Bamisaye</h5>
+              <small>Chief Chef and Supervisor</small>
               <div class="d-flex justify-content-center mt-3">
                 <a class="btn btn-square btn-primary mx-1" href=""
                   ><i class="fab fa-facebook-f"></i
@@ -1127,196 +1128,121 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <section class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container">
-        <div class="text-center">
-          <h5
-            class="section-title ff-secondary text-center text-primary fw-normal"
-          >
-            Testimonial
-          </h5>
-          <h1 class="mb-5">Our Clients Say!!!</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel">
-          <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-              stet amet eirmod eos labore diam
-            </p>
-            <div class="d-flex align-items-center">
-              <img
-                class="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-1.jpg"
-                style="width: 50px; height: 50px"
-              />
-              <div class="ps-3">
-                <h5 class="mb-1">Client Name</h5>
-                <small>Profession</small>
-              </div>
-            </div>
+          <div class="text-center">
+              <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+              <h1 class="mb-5">Our Clients Say!!!</h1>
           </div>
-          <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-              stet amet eirmod eos labore diam
-            </p>
-            <div class="d-flex align-items-center">
-              <img
-                class="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-2.jpg"
-                style="width: 50px; height: 50px"
-              />
-              <div class="ps-3">
-                <h5 class="mb-1">Client Name</h5>
-                <small>Profession</small>
+          <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item bg-transparent border rounded p-4">
+                  <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                  <p>I love how easy it is to order my favorite meals from the comfort of my couch with this food ordering website. Quick and delicious - my go-to platform!</p>
+                  <div class="d-flex align-items-center">
+                      <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                      <div class="ps-3">
+                          <h5 class="mb-1">Femi Ajewole</h5>
+                          <small>Data Analyst</small>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-              stet amet eirmod eos labore diam
-            </p>
-            <div class="d-flex align-items-center">
-              <img
-                class="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-3.jpg"
-                style="width: 50px; height: 50px"
-              />
-              <div class="ps-3">
-                <h5 class="mb-1">Client Name</h5>
-                <small>Profession</small>
+              <div class="testimonial-item bg-transparent border rounded p-4">
+                  <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                  <p>This food ordering website is a game-changer! It saves me time and hassle, ensuring my meals arrive hot and on time. Highly recommended!</p>
+                  <div class="d-flex align-items-center">
+                      <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                      <div class="ps-3">
+                          <h5 class="mb-1">Nkechi Ngozi</h5>
+                          <small>Product Manager</small>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="testimonial-item bg-transparent border rounded p-4">
-            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-            <p>
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-              stet amet eirmod eos labore diam
-            </p>
-            <div class="d-flex align-items-center">
-              <img
-                class="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-4.jpg"
-                style="width: 50px; height: 50px"
-              />
-              <div class="ps-3">
-                <h5 class="mb-1">Client Name</h5>
-                <small>Profession</small>
+              <div class="testimonial-item bg-transparent border rounded p-4">
+                  <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                  <p>With a vast selection of restaurants at my fingertips, this food ordering website satisfies all my cravings. It's my one-stop solution for delicious meals delivered right to my door.</p>
+                  <div class="d-flex align-items-center">
+                      <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                      <div class="ps-3">
+                          <h5 class="mb-1">Segun</h5>
+                          <small>Cinematographer</small>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="testimonial-item bg-transparent border rounded p-4">
+                  <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                  <p>Effortless and efficient! This food ordering website streamlines the entire process, making it a breeze to enjoy restaurant-quality meals without leaving home.</p>
+                  <div class="d-flex align-items-center">
+                      <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                      <div class="ps-3">
+                          <h5 class="mb-1">Aldullahi Musa</h5>
+                          <small>Business Man</small>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </section>
     <!-- Testimonial End -->
 
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
+    <section class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4
-              class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-            >
-              Company
-            </h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Reservation</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                  <a class="btn btn-link" href="">About Us</a>
+                  <a class="btn btn-link" href="">Contact Us</a>
+                  <a class="btn btn-link" href="">Reservation</a>
+                  <a class="btn btn-link" href="">Privacy Policy</a>
+                  <a class="btn btn-link" href="">Terms & Condition</a>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                  <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Ikeja, Lagos, Nigeria</p>
+                  <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>08060000200, 09020000400</p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>noblefoods@example.com</p>
+                  <div class="d-flex pt-2">
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                  <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                  <p>09AM - 09PM</p>
+                  <h5 class="text-light fw-normal">Sunday</h5>
+                  <p>10AM - 08PM</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                  <p>Subcribe to our Newsletter channels to receive tips for the week</p>
+                  <div class="position-relative mx-auto" style="max-width: 400px;">
+                      <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                      <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                  </div>
+              </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4
-              class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-            >
-              Contact
-            </h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4
-              class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-            >
-              Opening
-            </h4>
-            <h5 class="text-light fw-normal">Monday - Saturday</h5>
-            <p>09AM - 09PM</p>
-            <h5 class="text-light fw-normal">Sunday</h5>
-            <p>10AM - 08PM</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4
-              class="section-title ff-secondary text-start text-primary fw-normal mb-4"
-            >
-              Newsletter
-            </h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-primary w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">NobleFoods </a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
+          <div class="copyright">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                     <a class="border-bottom" href="#">NobleFoods</a>, All Right Reserved. 
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="footer-menu">
+                          <a href="">Home</a>
+                          <a href="">Cookies</a>
+                          <a href="">Help</a>
+                          <a href="">FQAs</a>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
+  </section>
     <!-- Footer End -->
 
     <!-- JavaScript Libraries -->
